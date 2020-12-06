@@ -5,7 +5,7 @@ namespace MySourceGenerator.SyntaxReceivers
 {
     public class MySyntaxReceiver : ISyntaxReceiver
     {
-        public ClassDeclarationSyntax MyClassSyntax { get; set; }
+        public ClassDeclarationSyntax MyClassSyntax { get; private set; }
 
         public void OnVisitSyntaxNode(SyntaxNode syntaxNode)
         {
